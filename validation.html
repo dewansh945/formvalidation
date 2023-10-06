@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form input {
+            margin: 20px;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            font-size: 20px;
+        }
+
+        input[type="password"] {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form>
+            <input type="text" placeholder="name" id="name"><br>
+            <input type="text" placeholder="username" id="username"><br>
+            <input type="text" placeholder="Enter Mobile no." id="mob"><br>
+            <input type="text" placeholder="Password" id="pass"><br>
+            <input type="text" placeholder="Confirm Password" id="cpass"><br>
+            <button onclick="return validation()">Register</button>
+        </form>
+
+    </center>
+    <script src="Validation.js"></script>
+
+
+</body>
+
+</html>
