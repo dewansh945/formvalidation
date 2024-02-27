@@ -4,40 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
     <style>
+        body {
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
         form input {
-            margin: 20px;
-            width: 400px;
-            padding: 20px;
-            border-radius: 10px;
+            margin: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
         }
 
-        input[type="text"] {
-            font-size: 20px;
-        }
-
-        input[type="password"] {
-            font-size: 20px;
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
         }
     </style>
 </head>
 
 <body>
-    <center>
-        <form>
-            <input type="text" placeholder="name" id="name"><br>
-            <input type="text" placeholder="username" id="username"><br>
-            <input type="text" placeholder="Enter Mobile no." id="mob"><br>
-            <input type="text" placeholder="Password" id="pass"><br>
-            <input type="text" placeholder="Confirm Password" id="cpass"><br>
-            <button onclick="return validation()">Register</button>
-        </form>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <form method="POST">
+        <div id="errorname"></div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br>
 
-    </center>
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname" placeholder="Enter Your Username" required><br>
+
+        <label for="mob">Mobile Number:</label>
+        <input type="tel" id="mob" name="mob" placeholder="Enter Mobile Number" required><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" placeholder="Password" required><br>
+
+        <label for="cpass">Confirm Password:</label>
+        <input type="password" id="cpass" name="cpass" placeholder="Confirm Password" required><br>
+
+        <button type="button" onclick="return validation()">Register</button>
+    </form>
     <script src="Validation.js"></script>
-
-
 </body>
 
 </html>
